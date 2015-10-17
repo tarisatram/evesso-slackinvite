@@ -1,0 +1,13 @@
+%div.request
+  %form{method: "POST"}
+    .form-group
+      %label Character Name
+      %input.form-control{type: 'text', value: @character_info['characterName'], readonly: true, name: 'name'}
+    .form-group
+      %label Corporation Name
+      %input.form-control{type: 'text', value: @character_info['corporation'], readonly: true, name: 'corp'}
+    .form-group
+      %label E-Mail Address
+      %input.form-control{type: 'email', placeholder: 'E-Mail', name: 'email'}
+    %button.btn.btn-default{type: 'submit'} Submit
+    %a.btn.btn-danger{href: '/authorize'} Back

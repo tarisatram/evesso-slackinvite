@@ -1,0 +1,20 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.splash {
+  width: 300px;
+  margin: 200px auto;
+  text-align: center;
+}
+
+.request {
+  max-width: 500px;
+  margin: 200px auto;
+}
+
+.thanks {
+  margin: 200px auto;
+  text-align: center;
+}

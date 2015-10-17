@@ -1,0 +1,28 @@
+{
+  "name": "EVE SSO Slack Invite",
+  "description": "CREST verified Slack invite requests.",
+  "repository": "https://github.com/chmodr777/evesso-slackinvite.git",
+  "keywords": ["ruby", "sinatra", "slack", "crest"],
+  "env": {
+    "CREST_ID": {
+      "description": "CREST Client ID, obtained from developers.eveonline.com",
+      "required": true
+    },
+    "CREST_KEY": {
+      "description": "CREST Secret Key, obtained from developers.eveonline.com",
+      "required": true
+    },
+    "CREST_CALLBACK_URL": {
+      "description": "CREST callback URL, this should match your deployment URL. EX: https://evesso-slackinvite.example.com/verify",
+      "required": true
+    },
+    "SLACK_TEAM": {
+      "description": "Your Slack. team's subdomain. EX: <SLACK_TEAM>.slack.com",
+      "required": true
+    },
+    "SLACK_WEBHOOK_URL": {
+      "description": "The incoming-webhook the invitation will be posted to. You can generate one at https://<SLACK_TEAM>.slack.com/services/new/incoming-webhook",
+      "required": true
+    }
+  }
+}

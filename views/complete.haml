@@ -1,0 +1,5 @@
+%div.thanks
+  %h2 Thanks, #{@invite_request.name}!
+  %p A request has been sent to the <b>#{ENV['SLACK_TEAM']}</b> admins.
+  %p An invitation link will be sent to <b>#{@invite_request.email}</b> as soon as the request has been reviewed.
+  %a.btn.btn-success{href: "https://#{ENV['SLACK_TEAM']}.slack.com"} Go to Slack.
