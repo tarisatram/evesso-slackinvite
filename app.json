@@ -1,7 +1,7 @@
 {
   "name": "EVE SSO Slack Invite",
   "description": "CREST verified Slack invite requests.",
-  "repository": "https://github.com/chmodr777/evesso-slackinvite.git",
+  "repository": "https://github.com/tarisatram/evesso-slackinvite.git",
   "keywords": ["ruby", "sinatra", "slack", "crest"],
   "env": {
     "CREST_ID": {
