@@ -1,13 +1,11 @@
 %div.request
+  %img.img-rounded.center-block{src: "https://image.eveonline.com/Character/#{session[:character_id]}_128.jpg"}
+  %h2.text-center #{session[:character_name]}
+  %h2.text-center <small>#{session[:corporation_name]}</small>
+  %hr
   %form{method: "POST"}
-    .form-group
-      %label Character Name
-      %input.form-control{type: 'text', value: @character_info['characterName'], readonly: true, name: 'name'}
-    .form-group
-      %label Corporation Name
-      %input.form-control{type: 'text', value: @character_info['corporation'], readonly: true, name: 'corp'}
     .form-group
       %label E-Mail Address
       %input.form-control{type: 'email', placeholder: 'E-Mail', name: 'email'}
-    %button.btn.btn-default{type: 'submit'} Submit
-    %a.btn.btn-danger{href: '/authorize'} Back
+    %button.btn.btn-success.btn-block{type: 'submit'} Submit
+    %a.btn.btn-danger.btn-block{href: '/authorize'} Back

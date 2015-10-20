@@ -23,6 +23,11 @@
     "SLACK_WEBHOOK_URL": {
       "description": "The incoming-webhook the invitation will be posted to. You can generate one at https://<SLACK_TEAM>.slack.com/services/new/incoming-webhook",
       "required": true
+    },
+    "SESSION_SECRET": {
+      "description": "Secret used for encrypting sessions",
+      "required": true,
+      "generator": "secret"
     }
   }
 }
