@@ -60,6 +60,7 @@ get '/verify' do
   session[:character_id] = verification_info['CharacterID']
   session[:character_name] = @character_info['characterName']
   session[:corporation_name] = @character_info['corporation']
+  session[:alliance_name] = @character_info['alliance']
   haml :verify
 end
 

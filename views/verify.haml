@@ -2,6 +2,9 @@
   %img.img-rounded.center-block{src: "https://image.eveonline.com/Character/#{session[:character_id]}_128.jpg"}
   %h2.text-center #{session[:character_name]}
   %h2.text-center <small>#{session[:corporation_name]}</small>
+  - if session[:alliance_name]
+    %h2.text-center <small>#{session[:alliance_name]}</small>
+
   %hr
   %form{method: "POST"}
     .form-group
