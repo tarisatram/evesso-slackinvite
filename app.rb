@@ -65,7 +65,7 @@ get '/verify' do
 end
 
 post '/verify' do
-  @invite_request = InviteRequest.new(session[:character_name],session[:corporaton_name],params[:email])
+  @invite_request = InviteRequest.new(session[:character_name],session[:corporation_name],params[:email])
   @invite_request.submit
   haml :complete
 end
