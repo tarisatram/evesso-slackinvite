@@ -15,7 +15,7 @@ enable :sessions
 set :session_secret, ENV['SESSION_SECRET']
 
 def oauth2_client
-  oauth2_client || OAuth2::Client.new(ENV['CREST_ID'], ENV['CREST_KEY'], {
+  OAuth2::Client.new(ENV['CREST_ID'], ENV['CREST_KEY'], {
     site: 'https://login.eveonline.com',
     authorize_url: '/oauth/authorize',
     token_url:     '/oauth/token'
